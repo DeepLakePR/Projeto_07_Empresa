@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body { height: 100%; }
+
+/* Auxiliar Class */
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*****/
+section.main{
+    position: relative;
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 700px;
+}
+
+section.main .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+section.main header{
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+section.main .social-icons{
+    float: right;
+}
+
+section.main .social-icons a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+section.main .logo{
+    margin-top: 20px;
+    float: left;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+section.main .nav-desktop{
+    margin-top: 20px;
+    float: right;
+}
+
+section.main .nav-desktop ul{
+    list-style-type: none;
+}
+
+section.main .nav-desktop li{
+    font-size: 17px;
+    display: inline-block;
+    font-weight: lighter;
+    margin: 0 15px;
+}
+
+section.main .nav-desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Mobile Menu */
+section.main .nav-mobile{
+    display: none;
+    float: right;
+}
+
+section.main .nav-mobile > i{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+}
+
+section.main .nav-mobile ul{
+    z-index: 2;
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    list-style-type: none;
+    background: white;
+}
+
+section.main .nav-mobile li{
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+    text-align: center;
+    font-weight: lighter;
+}
+
+section.main .nav-mobile li a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+}
+
+/* Header Content */
+section.main .header-content{
+    position: relative;
+    z-index: 1;
+    margin: 110px 0;
+    max-width: 700px;
+}
+
+section.main .header-content h2{
+    color: white;
+    font-size: 44px;
+    font-weight: lighter;
+}
+
+section.main .header-content h2 > span{
+    color: #2692FF;
+}
+
+section.main .header-content p{
+    color: white;
+    font-weight: lighter;
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+section.main .header-content a{
+    display: block;
+    width: 177px;
+    height: 44px;
+    background: #2692FF;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 44px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/**************/
+/* Planos Section */
+section.plans .plans-call{
+    width: 100%;
+    text-align: center;
+    padding: 27px 2%;
+    background: rgb(219, 219, 219);
+    border-top: 2px solid #2692FF;
+}
+
+section.plans .plans-call h2{
+    display: inline-block;
+    color: #2692FF;
+    font-size: 20px;
+    font-weight: uppercase;
+    text-transform: uppercase;
+}
+
+section.plans .plans-box{
+    padding: 40px 0;
+}
+
+section.plans .plans-box > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.plans .plans-box-single{
+    width: 33.3%;
+    padding: 0 30px;
+}
+
+section.plans .plans-box-single .plans-box-wrapper{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-height: 250px;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+section.plans .plans-box-single h2{
+    background: #2692FF;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+section.plans .plans-box-single .plan-description{
+    padding: 8px 0 15px 0;
+}
+
+section.plans .plans-box-single p{
+    color: #777777;
+    font-size: 17px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+section.plans .plans-box-single .price{
+    margin-top: 10px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+section.plans .plans-box-single .price h2{
+    color: #777;
+    font-size: 24px;
+    padding: 0 20px;
+    background-color: transparent;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+}
+
+/* Parallax */
+section.parallax{
+    width: 100%;
+    min-height: 400px;
+    padding: 30px 0;
+    background-image: url('../images/bg_parallax.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect */
+    position: relative;
+}
+
+section.parallax > .container{
+    position: relative;
+    z-index: 2;
+    margin: 40px auto;
+    max-width: 960px;
+    color: white;
+}
+
+section.parallax h2{
+    text-align: center;
+}
+
+section.parallax p{
+    margin-top: 15px;
+}
+
+section.parallax .parallax-overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.6);
+}
+
+/* Final Section */
+section.final-section{
+    padding: 50px 0;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+section.final-section h2{
+    position: relative;
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+}
+
+section.final-section h2 > .border-effect{
+    width: 100px;
+    height: 2px;
+    background: #777;
+    position: relative;
+    transition: 0.5s;
+}
+
+section.final-section h2:hover > .border-effect{
+    width: 125px;
+}
+
+/* Final Section Contact */
+section.final-section .contact form{
+    margin-top: 15px;
+
+}
+
+section.final-section .contact input:not([type="submit"]){
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
+section.final-section .contact textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+    resize: vertical;
+    min-height: 120px;
+    max-height: 240px;
+}
+
+section.final-section .contact input[type="submit"]{
+    cursor: pointer;
+    font-size: 15px;
+    background: #2692FF;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    width: 150px;
+    height: 32px;
+}
+
+/* Final Section Team */
+section.final-section .team > .w50{
+    width: 48%;
+    margin: 15px 1%;
+}
+
+section.final-section .team-box-single{
+    border: 1px solid #ccc;
+    min-height: 250px;
+    padding: 10px 8px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+section.final-section .team-box-single .team-box-single-header{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.final-section .team-box-single .team-box-single-avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ccc;
+    vertical-align: middle;
+}
+
+section.final-section .team-box-single .team-box-single-user-info{
+    display: inline-block;
+    color: #777;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+
+section.final-section .team-box-single .team-box-single-description{
+    color: #999;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    padding: 30px 2%;
+    text-align: center;
+    color: white;
+    background: #444;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+
+    section.main nav.nav-desktop{
+        display: none;
+    }
+
+    section.main  nav.nav-mobile{
+        display: block;
+    }
+
+    section.plans .plans-box-single{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Final Section Team */
+    .w50{
+        width: 100%;
+    }
+
+    section.final-section .team > .w50{
+        width: 100%;
+        margin: 15px 0;
+    }
+
+}
